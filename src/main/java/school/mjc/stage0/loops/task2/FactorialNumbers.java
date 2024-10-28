@@ -5,10 +5,15 @@ public class FactorialNumbers {
         int i = 0;
         int num = 1;
         while (i <= printToInclusive) {
-           num *= i;
-            i++;
+            if (i == 0){
+                num = num * (i+1);
+            }else{
+                num *= i;
+            }
+                i++;
+                System.out.println(num);
         }
-        System.out.println(num);            
+                    
             
     }
 }
